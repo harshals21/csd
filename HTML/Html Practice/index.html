@@ -2,16 +2,29 @@
 <html>
 
 <head>
-    <title>Div and Span Page</title>
+    <title>HTML Form</title>
 </head>
 
 <body>
 
-    <div style="background-color: black; color: white;">Hello world. This is my first div.</div>
+    <form>
+        <p>First Name:</p>
+        <input type="text" name="firstname" placeholder="First Name">
+        <p>Last Name:</p>
+        <input type="text" name="lastname" placeholder="Last Name"><br>
+        <textarea name="content"></textarea>
+        <p>Select your favorite fruit.</p>
+        <select name="fruit">
+            <option value="apple">Apple</option>
+            <option value="apple">Strawberry</option>
+            <option value="apple">Kiwi</option>
+            <option value="apple">Watermelon</option>
+        </select><br>
 
-    <div style="background-color: blue; color: white;">This is my second div</div>
 
-    <h1>This is a <span style="color: blue;">Blue</span> header!</h1>
+        <input type="submit">
+    </form>
+
 </body>
 
 </html>

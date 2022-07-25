@@ -1,0 +1,32 @@
+/* This is applying our branded blue color */
+
+p {
+  color: aliceblue;
+  font-size: 13px;
+}
+
+body {
+  background-color: black;
+}
+
+div {
+  background-color: aquamarine;
+}
+#cssexample {
+  color: blueviolet;
+}
+h1,
+h2,
+p {
+  color: red;
+  text-align: center;
+}
+
+/* This is a
+multi line comment */
+
+/*background short hand property
+background: bg-color url("img_path") no-repeat;
+*/
+
+/* padding: top right bottom left */
