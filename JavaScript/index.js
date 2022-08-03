@@ -63,3 +63,91 @@
 
 // greet('John', 'Smith');
 // console.log(square(2));
+
+// Operators
+/*
+- Arithmetic operators
+- Assignment Operators
+- Comparison Operators
+- Equality Operators
+
+Checks type + value (Strict equality)
+-> console.log(1 === 1)
+
+checks value (Lose equality)
+-> console.log(1 == 1)
+*/
+
+// Ternary Operators
+
+// let points = 90;
+// let type = points > 100 ? 'gold' : 'silver';
+
+// console.log(type);
+
+// Logical operators with Non-Booleans
+
+// Falsy (false)
+// undefined
+// null
+// 0
+// false
+// ''
+// NaN
+
+// if the above values are used in evaluating an expression
+// they are treated as falsy.
+
+// Anything that is not Falsy -> Truthy
+
+// Short Circuiting
+// Eg. false || 1 || 2
+// JS engine finds value 1 evaluates it as true and returns
+// without checking any other value 
+
+// let userColor = undefined;
+// let defaultColor = 'blue';
+// let currentColor = userColor || defaultColor;
+
+// console.log(currentColor);
+
+// Swap Variables
+
+// let a = 'red';
+// let b = 'blue';
+
+// Swapping
+// let temp = a;
+// a = b;
+// b = temp;
+
+
+// console.log(a);
+// console.log(b);
+
+// maximum of two numbers
+
+// function maxOfTwoNumbers(num1, num2) {
+//     if (num1 > num2)
+//         return num1;
+//     else
+//         return num2;
+// }
+
+// console.log(maxOfTwoNumbers(10, 20));
+
+// FizzBuzz
+
+// Divisible by 3 => Fizz
+// Divisible by 5 => Buzz
+// Divisible by both 3 and 5 => FizzBuzz
+// Not divisible by 3 or 5 => input
+// Not a number => 'Not a number'
+
+
+const output = fizzBuzz(3);
+console.log(output);
+
+function fizzBuzz(input) {
+
+}
