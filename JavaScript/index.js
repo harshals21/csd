@@ -103,7 +103,7 @@ checks value (Lose equality)
 // Short Circuiting
 // Eg. false || 1 || 2
 // JS engine finds value 1 evaluates it as true and returns
-// without checking any other value 
+// without checking any other value
 
 // let userColor = undefined;
 // let defaultColor = 'blue';
@@ -145,9 +145,71 @@ checks value (Lose equality)
 // Not a number => 'Not a number'
 
 
-const output = fizzBuzz(3);
-console.log(output);
+// const output = fizzBuzz(3);
+// console.log(output);
 
-function fizzBuzz(input) {
+// function fizzBuzz(input) {
 
+// }
+
+//  Exercise
+
+// Speed Limit = 70
+// 5 -> 1 point
+// Math.floor(1.3)
+// 12 points -> License suspended
+
+// checkSpeed(74);
+
+// function checkSpeed(speed) {
+//     const speedLimit = 70;
+//     const kmPerPoint = 5;
+
+//     if (speed <= speedLimit + kmPerPoint) {
+//         console.log('Ok');
+//     }
+//     else {
+//         const points = Math.floor((speed - speedLimit) / kmPerPoint);
+//         if (points >= 12)
+//             console.log('License suspended');
+//         else
+//             console.log('Points', points);
+//     }
+
+// }
+
+// EVEN AND ODD NUMBERS
+
+// showNumbers(10);
+
+// function showNumbers(limit) {
+// for (let i = 0; i <= limit; i++) {
+//     if (i % 2 === 0)
+//         console.log(i, 'EVEN');
+//     else
+//         console.log(i, 'ODD');
+// }
+
+// Method 2: concise
+//     for (let i = 0; i <= limit; i++) {
+//         const message = (i % 2 == 0) ? 'EVEN' : 'ODD';
+//         console.log(i, message);
+//     }
+// }
+
+// STRING Properties
+
+const movie = {
+    title: 'a',
+    releaseYear: 2018,
+    rating: 4.5,
+    director: 'b'
+};
+
+showProperties(movie);
+
+function showProperties(obj) {
+    for (let key in obj)
+        if (typeof obj[key] === 'string')
+            console.log(key, obj[key]);
 }
