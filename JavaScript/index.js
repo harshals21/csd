@@ -199,17 +199,85 @@ checks value (Lose equality)
 
 // STRING Properties
 
-const movie = {
-    title: 'a',
-    releaseYear: 2018,
-    rating: 4.5,
-    director: 'b'
-};
+// const movie = {
+//     title: 'a',
+//     releaseYear: 2018,
+//     rating: 4.5,
+//     director: 'b'
+// };
 
-showProperties(movie);
+// showProperties(movie);
 
-function showProperties(obj) {
-    for (let key in obj)
-        if (typeof obj[key] === 'string')
-            console.log(key, obj[key]);
-}
+// function showProperties(obj) {
+//     for (let key in obj)
+//         if (typeof obj[key] === 'string')
+//             console.log(key, obj[key]);
+// }
+
+// SECTION : OBJECTS
+
+// Object-oriented Programming (OOP)
+
+// const circle = {
+//     radius: 1,
+//     location: {
+//         x: 1,
+//         y: 1
+//     },
+//     isVisible: true,
+//     draw: function () {
+//         console.log('draw');
+//     }
+// };
+
+// circle.draw(); // Method
+
+// Factory Function
+
+// function createCircle(radius) {
+//     return {
+//         radius,
+//         draw() {
+//             console.log('draw');
+//         }
+//     };
+// }
+
+// const circle1 = createCircle(1);
+// console.log(circle1);
+
+// const circle2 = createCircle(2);
+// console.log(circle2);
+
+// Constructor Function
+
+// Note: recommended to use pascal notation for
+// constructor function
+
+// Camel Notation: oneTwoThreeFour
+// Pascal Notation: OneTwoThreeFour
+
+// function Circle(radius) {
+//     this.radius = radius;
+//     this.draw = function () {
+//         console.log('draw');
+//     }
+// }
+
+// const circle = new Circle(1);
+
+// Dynamic nature of objects
+
+// const circle = {
+//     radius: 1
+// };
+
+// circle.color = 'yellow';
+// circle.draw = function () { }
+
+// delete circle.color;
+// delete circle.draw;
+
+// console.log(circle);
+
+// functions are objects
