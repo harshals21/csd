@@ -284,15 +284,101 @@ checks value (Lose equality)
 
 // Objects are not iterable
 
-const circle = {
-    radius: 1,
-    draw() {
-        console.log('draw');
-    }
-};
+// const circle = {
+//     radius: 1,
+//     draw() {
+//         console.log('draw');
+//     }
+// };
 
-for (let key in circle)
-    console.log(key, circle[key]);
+// for (let key in circle)
+//     console.log(key, circle[key]);
 
-for (let key of Object.keys(circle))
-    console.log(key);
+// for (let key of Object.keys(circle))
+//     console.log(key);
+
+// SECTION : ARRAYS
+
+// const numbers = [3, 4];
+
+// // End
+// numbers.push(5, 6);
+
+// // Beginning
+// numbers.unshift(1, 2);
+
+// // Middle
+// numbers.splice(2, 0, 'a', 'b');
+
+// console.log(numbers);
+
+// FINDING ELEMENTS (Primitives)
+
+// const numbers = [1, 2, 3, 1, 4];
+
+// console.log(numbers.indexOf(1, 2));
+// console.log(numbers.lastIndexOf(1));
+
+// console.log(numbers.indexOf(1) !== -1);
+// console.log(numbers.includes(1));
+
+// Finding Elements ( Reference types )
+
+// const courses = [
+//     { id: 1, name: 'a' },
+//     { id: 2, name: 'b' },
+// ];
+
+// console.log(courses.includes({ id: 1, name: 'a' }));
+// there are two references, thats why we get false
+
+// ARROW FUNCTIONS
+
+// const courses = [
+//     { id: 1, name: 'a' },
+//     { id: 2, name: 'b' },
+// ];
+
+// const course = courses.find(course => course.name === 'a');
+
+// console.log(course);
+
+
+// SPREAD OPERATOR
+
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
+
+// const combined = [...first, 'a', ...second, 'b'];
+// console.log(combined);
+
+// ITERATING AN ARRAY
+
+// const numbers = [1, 2, 3];
+
+// for (let number of numbers)
+//     console.log(number);
+
+// // Method 2
+
+// numbers.forEach((number, index) => console.log(index, number));
+
+// JOINING ARRAYS
+
+const numbers = [1, 2, 3];
+const joined = numbers.join(',');
+console.log(joined);
+
+const message = 'This is my first message';
+const parts = message.split(' ');
+console.log(parts);
+
+const combined = parts.join('-');
+console.log(combined);
+
+
+
+
+
+
+
